@@ -1,0 +1,21 @@
+{
+  "name": "node_api_password_regex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha test --exit",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.1",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0"
+  }
+}
