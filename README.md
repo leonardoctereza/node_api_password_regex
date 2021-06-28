@@ -30,6 +30,5 @@ API que valida se uma senha atende as seguintes regras:
     - Body: { password: string}
     - Retorn: { isValid: boolean}
     - Possiveis status: 
-      - 200 (Senha valida)
-      - 400 (Senha invalida)
-      - 500 (Erro)
+      - 200 (Senha valida ou invalida)
+      - 400 (Erro)
