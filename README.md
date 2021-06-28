@@ -28,7 +28,7 @@ API que valida se uma senha atende as seguintes regras:
     - Retorna status 200 "API OK"
  - GET /password/isValid
     - Body: { password: string}
-    - Retorn: { isValid: boolean}
+    - Retorna: { isValid: boolean}
     - Possiveis status: 
       - 200 (Senha valida ou invalida)
       - 400 (Erro)
