@@ -20,13 +20,13 @@ exports.isValid = function (req, res) {
         isValid: true,
       });
     }
-    return res.status(400).json({
+    return res.status(200).json({
       isValid: false,
     });
   } catch (error) {
     console.log(error);
-    res.status(500).json({
-      error: err,
+    res.status(400).json({
+      error: "Error on validate password format",
     });
   }
 };
