@@ -13,7 +13,7 @@ exports.isValid = function (req, res) {
   try {
     const password = req.body.password;
     const regexFormat = new RegExp(
-      "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()-+])(?=.{9,})"
+      "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()-+])(?!.*\\s)(?=.{9,})"
     );
     if (regexFormat.test(password) && !/(.).*\1/.test(password)) {
       return res.status(200).json({
